@@ -1,11 +1,22 @@
-h1, .berkshire-swash-regular {
+h1,
+.berkshire-swash-regular {
     font-family: "Berkshire Swash", serif;
     font-weight: 400;
     font-style: normal;
     color: white;
 }
 
-body{
+.belleza-regular {
+    font-family: "Belleza", serif;
+    font-weight: 550;
+    font-style: normal;
+}
+
+h2{
+    font-size: 200%;
+}
+
+body {
     background-color: #DDCD9D;
 }
 
@@ -16,7 +27,7 @@ body{
     border-radius: 25%;
 }
 
-header{
+header {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 8fr;
@@ -26,32 +37,36 @@ header{
     background-size: cover; */
 }
 
-nav{
+nav {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 3fr;
+    margin-top: 1%;
 }
 
-.Noelles_beskrivning{
+.Noelles_beskrivning {
     background-image: url('./img/Skärmbild-2025-02-14-134642.webp');
     background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    font-size: x-large;
 }
 
 main {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 5fr 5fr 5fr;
-    margin-top: 10%;
+    margin-top: 5%;
     border-radius: 25px;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-right: 10%;
     font-size: 500%;
 }
 
-.header_image_background{
+.header_image_background {
     background-image: url('./img/Northern-Lights-above-Rovaniemi-in-Lapland-Finland-Visit-Rovaniemi-SamuliRosenberg-2-800x534.webp');
     background-size: cover;
 }
