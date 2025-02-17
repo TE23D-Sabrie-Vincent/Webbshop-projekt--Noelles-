@@ -1,0 +1,46 @@
+h1, .berkshire-swash-regular {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+body{
+    background-color: #DDCD9D;
+}
+
+.img-logo {
+    height: 30%;
+    margin-top: 6.5%;
+    margin-left: 6.5%;
+    border-radius: 25%;
+}
+
+header{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 8fr;
+    border-radius: 25px;
+    border: solid black 2.5px;
+    /* background-image: url('./img/Northern-Lights-above-Rovaniemi-in-Lapland-Finland-Visit-Rovaniemi-SamuliRosenberg-2-800x534.webp');
+    background-size: cover; */
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 5fr 2fr;
+    border-radius: 25px;
+
+}
+
+h1{
+    text-align: center;
+    margin-right: 10%;
+    font-size: 500%;
+}
+
+.header_image_background{
+    background-image: url('./img/Northern-Lights-above-Rovaniemi-in-Lapland-Finland-Visit-Rovaniemi-SamuliRosenberg-2-800x534.webp');
+    background-size: cover;
+}
