@@ -16,6 +16,15 @@ h2{
     font-size: 200%;
 }
 
+.transparent-div{
+    background-color: #DDCD9D;
+    opacity:0.50;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
 body {
     background-color: #DDCD9D;
 }
@@ -31,6 +40,7 @@ header {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 8fr;
+    height: 30vh;
     border-radius: 25px;
     border: solid black 2.5px;
     /* background-image: url('./img/Northern-Lights-above-Rovaniemi-in-Lapland-Finland-Visit-Rovaniemi-SamuliRosenberg-2-800x534.webp');
@@ -50,6 +60,7 @@ nav {
     border-radius: 15px;
     text-align: center;
     font-size: x-large;
+    border: solid black 2px;
 }
 
 main {
