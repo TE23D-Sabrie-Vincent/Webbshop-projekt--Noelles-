@@ -57,6 +57,8 @@ nav {
 .Noelles_beskrivning {
     background-image: url('./img/Skärmbild-2025-02-14-134642.webp');
     /* background-position:bottom; */
+
+
     background-size: cover;
     border-radius: 15px;
     text-align: center;
@@ -66,6 +68,23 @@ nav {
     /* padding-bottom: 5%; */
     /* display: flex; */
     /* flex-direction: row; */
+
+}
+
+.Noelles_varuhus{
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    margin-left: 1%;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Varuhus_logos{
+    width: 60%;
+    margin-left: 18%;
+    /* height: 50%; */
 
 }
 
