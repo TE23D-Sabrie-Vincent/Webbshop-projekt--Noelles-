@@ -18,10 +18,10 @@ h2{
 
 .transparent-div{
     background-color: #DDCD9D;
-    opacity:0.50;
+    opacity:0.5;
     border-radius: 25px;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 5%;    
 
 }
 
@@ -56,11 +56,17 @@ nav {
 
 .Noelles_beskrivning {
     background-image: url('./img/Skärmbild-2025-02-14-134642.webp');
+    /* background-position:bottom; */
     background-size: cover;
     border-radius: 15px;
     text-align: center;
     font-size: x-large;
     border: solid black 2px;
+    /* padding-top: 5%; */
+    /* padding-bottom: 5%; */
+    /* display: flex; */
+    /* flex-direction: row; */
+
 }
 
 main {
@@ -79,5 +85,9 @@ h1 {
 
 .header_image_background {
     background-image: url('./img/Northern-Lights-above-Rovaniemi-in-Lapland-Finland-Visit-Rovaniemi-SamuliRosenberg-2-800x534.webp');
+    background-position: center;
+    object-fit: cover;
+    object-fit: contain;
     background-size: cover;
+    background-repeat: no-repeat;
 }
