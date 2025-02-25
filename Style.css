@@ -56,18 +56,14 @@ nav {
 
 .Noelles_beskrivning {
     background-image: url('./img/Skärmbild-2025-02-14-134642.webp');
-    /* background-position:bottom; */
-
-
+    background-position: top;
     background-size: cover;
     border-radius: 15px;
     text-align: center;
     font-size: x-large;
     border: solid black 2px;
-    /* padding-top: 5%; */
-    /* padding-bottom: 5%; */
-    /* display: flex; */
-    /* flex-direction: row; */
+    margin-left: 1%;
+    margin-right: 1%;
 
 }
 
@@ -81,9 +77,13 @@ nav {
     justify-content: space-between;
 }
 
+#Rubrik_varuhus{
+    text-align: center;
+}
+
 .Varuhus_logos{
     width: 60%;
-    margin-left: 18%;
+    margin-left: 15%;
     /* height: 50%; */
 
 }
@@ -92,8 +92,38 @@ main {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 5fr 5fr 5fr;
+    grid-template-columns: 60vh 5fr 5fr;
     margin-top: 5%;
     border-radius: 25px;
+}
+
+.Produkt-lådor{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0ed;
+    align-items: center;
+    border-radius: 25px;
+    /* background-color: white; */
+}
+
+.Produkt-bilder{
+    max-width: fit-content;
+    /* max-height: fit-content; */
+    /* align-items: center; */
+}
+
+.Produkt-namn{
+    text-align: center;
+}
+
+.Produkt-varukorg{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #D9D9D9;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: 2%;
+    border-radius: 10px;    
 }
 
 h1 {
@@ -101,6 +131,7 @@ h1 {
     margin-right: 10%;
     font-size: 500%;
 }
+
 
 .header_image_background {
     background-image: url('./img/Northern-Lights-above-Rovaniemi-in-Lapland-Finland-Visit-Rovaniemi-SamuliRosenberg-2-800x534.webp');
