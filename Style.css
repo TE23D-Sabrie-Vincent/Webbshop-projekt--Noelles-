@@ -62,7 +62,7 @@ nav {
     text-align: center;
     font-size: x-large;
     border: solid black 2px;
-    margin-left: 1%;
+    /* margin-left: 1%; */
     margin-right: 1%;
 
 }
@@ -92,8 +92,8 @@ main {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 5fr 5fr 5fr;
-    grid-template-columns: 60vh 5fr 5fr;
-    margin-top: 5%;
+    grid-template-columns: 65vh 65vh 60vh;
+    margin-top: 1%;
     border-radius: 25px;
 }
 
@@ -103,6 +103,8 @@ main {
     background-color: #f0f0ed;
     align-items: center;
     border-radius: 25px;
+    margin-left: 10%;
+
     /* background-color: white; */
 }
 
@@ -114,6 +116,12 @@ main {
 
 .Produkt-namn{
     text-align: center;
+}
+
+.Produkt-pris{
+    /* display: flex;
+    flex-direction: column; */
+    margin-right: 10%;
 }
 
 .Produkt-varukorg{
