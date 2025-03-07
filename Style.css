@@ -91,10 +91,12 @@ nav {
 main {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 5fr 5fr 5fr;
-    grid-template-columns: 65vh 65vh 60vh;
+    grid-template-columns: 3fr 3fr 3fr;
+    /* grid-template-columns: 45vh 45vh 45vh; */
     margin-top: 1%;
     border-radius: 25px;
+    /* display: flex;
+    flex-direction: row; */
 }
 
 .Produkt-lådor{
@@ -103,14 +105,15 @@ main {
     background-color: #f0f0ed;
     align-items: center;
     border-radius: 25px;
-    margin-left: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
 
     /* background-color: white; */
 }
 
 .Produkt-bilder{
     max-width: fit-content;
-    /* max-height: fit-content; */
+    max-height: fit-content;
     /* align-items: center; */
 }
 
