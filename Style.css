@@ -12,16 +12,16 @@ h1,
     font-style: normal;
 }
 
-h2{
+h2 {
     font-size: 200%;
 }
 
-.transparent-div{
+.transparent-div {
     background-color: #DDCD9D;
-    opacity:0.5;
+    opacity: 0.5;
     border-radius: 25px;
     margin-left: 5%;
-    margin-right: 5%;    
+    margin-right: 5%;
 
 }
 
@@ -67,7 +67,7 @@ nav {
 
 }
 
-.Noelles_varuhus{
+.Noelles_varuhus {
     background-color: #D9D9D9;
     border-radius: 15px;
     margin-left: 1%;
@@ -77,11 +77,11 @@ nav {
     justify-content: space-between;
 }
 
-#Rubrik_varuhus{
+#Rubrik_varuhus {
     text-align: center;
 }
 
-.Varuhus_logos{
+.Varuhus_logos {
     width: 60%;
     margin-left: 15%;
     /* height: 50%; */
@@ -96,12 +96,13 @@ main {
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 25px;
+    gap: 10px;
     /* display: flex;
     flex-direction: row; */
     /* max-width: max-content; */
 }
 
-.Produkt-lådor{
+.Produkt-lådor {
     display: flex;
     flex-direction: column;
     background-color: #f0f0ed;
@@ -112,7 +113,7 @@ main {
     /* background-color: white; */
 }
 
-.Produkt-bilder{
+.Produkt-bilder {
     width: fit-content;
     height: fit-content;
     max-width: fit-content;
@@ -120,38 +121,40 @@ main {
     /* align-items: center; */
 }
 
-#Överdragsbyxor-id{
+#Överdragsbyxor-id {
     height: 72.5%;
 }
 
-#Grå_tjockbyxor-id{
+#Grå_tjockbyxor-id {
     height: 80%;
     width: 70%;
     align-self: center;
     /* max-width: fit-content; */
     max-height: fit-content;
-    
+
 }
 
-.Produkt-namn{
+.Produkt-namn {
     text-align: center;
 }
 
-.Produkt-pris{
+.Produkt-pris {
     /* display: flex;
     flex-direction: column; */
     margin-right: 10%;
 }
 
-.Produkt-varukorg{
+.Produkt-varukorg {
     display: flex;
     justify-content: flex-end;
     background-color: #D9D9D9;
     margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;   
+    border-radius: 10px;
+    /* border: #f0f0ed;  */
 }
+
 
 h1 {
     text-align: center;
@@ -169,10 +172,17 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.Kundvagn-rubrik{
+.Kundvagn-rubrik {
     text-align: center;
 }
 
-.Kundvagn-låda{
-    background-color:#D9D9D9;
+.Kundvagn-låda {
+    background-color: #D9D9D9;
+    border-radius: 25px;
+}
+
+footer {
+    text-align: center;
+    background-color: #D9D9D9;
+    border-radius: 25px;
 }
