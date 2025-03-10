@@ -109,14 +109,28 @@ main {
     border-radius: 25px;
     margin-left: 2%;
     margin-right: 2%;
-
     /* background-color: white; */
 }
 
 .Produkt-bilder{
+    width: fit-content;
+    height: fit-content;
     max-width: fit-content;
     max-height: fit-content;
     /* align-items: center; */
+}
+
+#Överdragsbyxor-id{
+    height: 72.5%;
+}
+
+#Grå_tjockbyxor-id{
+    height: 80%;
+    width: 70%;
+    align-self: center;
+    /* max-width: fit-content; */
+    max-height: fit-content;
+    
 }
 
 .Produkt-namn{
@@ -136,7 +150,7 @@ main {
     margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;    
+    border-radius: 10px;   
 }
 
 h1 {
@@ -153,4 +167,12 @@ h1 {
     object-fit: contain;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.Kundvagn-rubrik{
+    text-align: center;
+}
+
+.Kundvagn-låda{
+    background-color:#D9D9D9;
 }
