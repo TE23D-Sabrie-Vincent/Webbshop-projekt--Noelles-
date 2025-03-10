@@ -192,8 +192,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
     nav {
-        grid-template-columns: 1fr;
-    }
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr 3fr;
+        margin-top: 1%;    }
     .Noelles_varuhus {
         flex-direction: column;
         align-items: center;
