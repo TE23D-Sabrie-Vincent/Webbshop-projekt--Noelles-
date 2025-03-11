@@ -42,6 +42,9 @@ header {
     height: 30vh;
     border-radius: 25px;
     border: solid black 2.5px;
+    height: 30vh; /* Behåll denna */
+    min-height: 150px; /* Lägg till en minsta höjd */
+    overflow: hidden; 
     /* background-image: url('./img/Northern-Lights-above-Rovaniemi-in-Lapland-Finland-Visit-Rovaniemi-SamuliRosenberg-2-800x534.webp');
     background-size: cover; */
 }
