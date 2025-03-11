@@ -16,8 +16,9 @@ h2 {
 }
 
 .transparent-div {
-    background-color: #DDCD9D;
-    opacity: 0.5;
+    /* background-color: #DDCD9D; */
+    background-color: rgba(221, 205, 157, 0.5); /* Samma färg som #DDCD9D men med 50% transparens */
+    /* opacity: 0.5; */
     border-radius: 25px;
     margin-left: 5%;
     margin-right: 5%;
@@ -62,7 +63,6 @@ nav {
     border: solid black 2px;
     /* margin-left: 1%; */
     margin-right: 1%;
-
 }
 
 .Noelles_varuhus {
