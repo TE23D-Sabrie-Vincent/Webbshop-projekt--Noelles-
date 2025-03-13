@@ -60,6 +60,17 @@ nav {
     margin-top: 1%;
 }
 
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav > a:hover {
+    color: green;
+}
+
 .Noelles_beskrivning {
     background-image: url('./img/Skärmbild-2025-02-14-134642.webp');
     background-position: top;
