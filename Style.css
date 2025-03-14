@@ -207,6 +207,19 @@ h1 {
 .Kundvagn-låda {
     background-color: #D9D9D9;
     border-radius: 25px;
+    padding: 1px;
+    margin-top: 2%; /* Yttre marginal uppåt */
+    /* max-width: 50%; */
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Kundvagn-total-pris{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
 }
 
 footer {
@@ -214,6 +227,11 @@ footer {
     background-color: #D9D9D9;
     border-radius: 25px;
 }
+
+.Produkt-varukorg:hover {
+    background-color: #FFC100; /* Ljusare gul vid hover */
+}
+
 
 @media screen and (max-width: 1024px) {
     main {
