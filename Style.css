@@ -215,6 +215,23 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.kundvagns-produkt {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#totalt-pris {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+
 .Kundvagn-total-pris{
     text-align: center;
     display: flex;
@@ -248,6 +265,11 @@ footer {
     .Noelles_varuhus {
         flex-direction: column;
         align-items: center;
+    }
+
+    .Kundvagn-låda {
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 
@@ -309,4 +331,10 @@ footer {
        margin-top: 2%;
        margin-bottom: 2%;
     }
+
+    .Kundvagn-låda {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
 }
