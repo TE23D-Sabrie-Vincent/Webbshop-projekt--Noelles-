@@ -1,6 +1,15 @@
-function Lägg_till_korg(){
-    console.log("Du har lagt till en produkt till varukorgen")
-}
+// document.addEventListener('DOMContentLoaded'), ()=> {
+//     const knappar = document.querySelectorAll('.lägg_till');
+//     let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+// function spara_Vagn(){
+//     localStorage.setItem('cart', JSON.stringify(cart));
+// }
+
+// function Lägg_till_korg(){
+//     console.log("Du har lagt till en produkt till varukorgen")
+// }
 
 let totaltPris = 0; // Håller koll på totala priset
 let kundvagnsProdukter = {}; // Lagrar produkter och antal
@@ -45,3 +54,4 @@ document.querySelectorAll(".Produkt-varukorg").forEach(knapp => {
         );
     });
 });
+// }
