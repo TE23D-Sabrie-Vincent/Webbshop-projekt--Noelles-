@@ -1,4 +1,3 @@
-
 let totaltPris = parseFloat(localStorage.getItem("totaltPris")) || 0;
 let kundvagnsProdukter = JSON.parse(localStorage.getItem("kundvagn")) || {};
 
@@ -15,7 +14,7 @@ function uppdateraKundvagn() {
         kundvagnLista.appendChild(produktElement);
     });
 
-    totalElement.textContent = `Totalt: ${totaltPris.toFixed(2)} kr`;
+    totalElement.textContent = `Totalt: ${totaltPris} kr`;
     localStorage.setItem("kundvagn", JSON.stringify(kundvagnsProdukter));
     localStorage.setItem("totaltPris", totaltPris);
 }

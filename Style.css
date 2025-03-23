@@ -245,14 +245,14 @@ h1 {
 #töm-kundvagn {
     display: block; /* Gör knappen till en block-element för enkel centrering */
     margin: 20px auto; /* Centrerar knappen horisontellt */
-    padding: 10px 20px; /* Gör knappen större och mer klickvänlig */
-    font-size: 18px; /* Större text */
+    padding: 10px;
+    font-size: 18px; 
     font-weight: bold; /* Fet stil för bättre läsbarhet */
-    background-color: black; /* Röd färg för "varning" */
-    color: white; /* Vit text */
-    border: none; /* Tar bort kantlinjer */
-    border-radius: 8px; /* Ger rundade hörn */
-    cursor: pointer; /* Förändrar muspekaren till en klickbar hand */
+    background-color: black; 
+    color: white; 
+    border: none; /* Tar bort kanterna i knappen så att det ser snyggare ut */
+    border-radius: 8px; 
+    cursor: pointer; 
     transition: background 0.3s; 
 }
 
@@ -357,5 +357,4 @@ footer {
         margin-left: 10%;
         margin-right: 10%;
     }
-
 }
