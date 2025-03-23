@@ -1,57 +1,52 @@
-// document.addEventListener('DOMContentLoaded'), ()=> {
-//     const knappar = document.querySelectorAll('.lägg_till');
-//     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+let totaltPris = parseFloat(localStorage.getItem("totaltPris")) || 0;
+let kundvagnsProdukter = JSON.parse(localStorage.getItem("kundvagn")) || {};
 
-// function spara_Vagn(){
-//     localStorage.setItem('cart', JSON.stringify(cart));
-// }
-
-// function Lägg_till_korg(){
-//     console.log("Du har lagt till en produkt till varukorgen")
-// }
-
-let totaltPris = 0; // Håller koll på totala priset
-let kundvagnsProdukter = {}; // Lagrar produkter och antal
-
-function laggTillIKundvagn(namn, pris) {
-    let kundvagn = document.querySelector(".Kundvagn-låda");
+// Funktion för att uppdatera kundvagnen i DOM
+function uppdateraKundvagn() {
+    let kundvagnLista = document.querySelector("#kundvagn-produkter");
     let totalElement = document.querySelector("#totalt-pris");
-    let numerisktPris = parseFloat(pris.replace("kr", "").trim());
+    kundvagnLista.innerHTML = ""; // Rensa innehållet
 
-    // Uppdatera antal om produkten redan finns
-    if (kundvagnsProdukter[namn]) {
-        kundvagnsProdukter[namn].antal++;
-    } else {
+    Object.entries(kundvagnsProdukter).forEach(([namn, produkt]) => {
         let produktElement = document.createElement("div");
         produktElement.classList.add("kundvagns-produkt");
-        produktElement.style.textAlign = "center";
-        kundvagn.insertBefore(produktElement, totalElement);
-        kundvagnsProdukter[namn] = { antal: 1, element: produktElement };
-    }
+        produktElement.textContent = `${namn} - ${produkt.pris}kr (${produkt.antal}x)`;
+        kundvagnLista.appendChild(produktElement);
+    });
 
-    // Uppdatera texten för produkten
-    kundvagnsProdukter[namn].element.textContent = `${namn} - ${pris} (${kundvagnsProdukter[namn].antal}x)`;
-
-    // Uppdatera totala priset
-    totaltPris += numerisktPris;
-    if (!totalElement) {
-        totalElement = document.createElement("p");
-        totalElement.id = "totalt-pris";
-        totalElement.style.textAlign = "center";
-        kundvagn.appendChild(totalElement);
-    }
-    totalElement.textContent = `Totalt: ${totaltPris} kr`;
+    totalElement.textContent = `Totalt: ${totaltPris.toFixed(2)} kr`;
+    localStorage.setItem("kundvagn", JSON.stringify(kundvagnsProdukter));
+    localStorage.setItem("totaltPris", totaltPris);
 }
 
-// Lägg till eventlyssnare på alla knappar
+// Funktion för att lägga till produkter
+function laggTillIKundvagn(namn, pris) {
+    let numerisktPris = parseFloat(pris.replace("kr", "").trim()) || 0; // Säkerställ att det är ett tal
+    if (numerisktPris === 0) return; // Om priset är ogiltigt, gör ingenting
+
+    kundvagnsProdukter[namn] = kundvagnsProdukter[namn] || { antal: 0, pris: numerisktPris };
+    kundvagnsProdukter[namn].antal++;
+    totaltPris += numerisktPris;
+    uppdateraKundvagn();
+}
+
+// Eventlyssnare för alla knappar
 document.querySelectorAll(".Produkt-varukorg").forEach(knapp => {
-    knapp.addEventListener("click", function () {
-        let produkt = this.closest(".Produkt-lådor");
-        laggTillIKundvagn(
-            produkt.querySelector(".Produkt-namn").textContent,
-            produkt.querySelector(".Produkt-pris").textContent
-        );
+    knapp.addEventListener("click", () => {
+        laggTillIKundvagn(knapp.dataset.namn, knapp.dataset.pris);
     });
 });
-// }
+
+// Ladda sparad kundvagn vid sidstart
+window.addEventListener("load", uppdateraKundvagn);
+
+function tömKundvagn() {
+    kundvagnsProdukter = {};  // Återställ objektet
+    totaltPris = 0;  // Återställ totalbeloppet
+    localStorage.removeItem("kundvagn"); // Ta bort sparad data
+    localStorage.removeItem("totaltPris");
+    uppdateraKundvagn(); // Uppdatera UI
+}
+
+document.getElementById("töm-kundvagn").addEventListener("click", tömKundvagn);

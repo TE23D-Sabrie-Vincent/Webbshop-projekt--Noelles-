@@ -73,7 +73,7 @@
                 <h2 class="Produkt-namn">Svart Hoodie</h2>
             </div>
 
-            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg">
+            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg" data-namn="Svart Hoodie" data-pris="899">
                 <h3 class="Produkt-pris">899kr</h3>
                 <p>Lägg till i Varukorg</p>
             </button>
@@ -86,7 +86,7 @@
                 <h2 class="Produkt-namn">Svart Jacka</h2>
             </div>
 
-            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg">
+            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg" data-namn="Svart Jacka" data-pris="699">
                 <h3 class="Produkt-pris">699kr</h3>
                 <p>Lägg till i Varukorg</p>
             </button>
@@ -98,7 +98,7 @@
                 <h2 class="Produkt-namn">Mountain gear Jacka</h2>
             </div>
 
-            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg">
+            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg" data-namn="Mountain gear Jacka" data-pris="899">
                 <h3 class="Produkt-pris">899kr</h3>
                 <p>Lägg till i Varukorg</p>
             </button>
@@ -110,7 +110,7 @@
                     alt="Kompressions byxor">
                 <h2 class="Produkt-namn">Kompressionsbyxor</h2>
             </div>
-            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg">
+            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg" data-namn="Kompressionsbyxor" data-pris="999">
                 <h3 class="Produkt-pris">999kr</h3>
                 <p>Lägg till i Varukorg</p>
             </button>
@@ -122,7 +122,7 @@
                     alt="Vinterbyxor överdragsbyxor">
                 <h2 class="Produkt-namn">Överdragsbyxor</h2>
             </div>
-            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg">
+            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg" data-namn="Överdragsbyxor" data-pris="599">
                 <h3 class="Produkt-pris">599kr</h3>
                 <p>Lägg till i Varukorg</p>
             </button>
@@ -133,7 +133,7 @@
                 <img id="Grå_tjockbyxor-id" src="./img/Grey sweatpants webp.webp" alt="Grå sweatpants">
                 <h2 class="Produkt-namn">Grå tjockbyxor</h2>
             </div>
-            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg">
+            <button onclick="laggTillIKundvagn()" class="Produkt-varukorg" data-namn="Grå tjockbyxor" data-pris="299">
                 <h3 class="Produkt-pris">299kr</h3>
                 <p>Lägg till i Varukorg</p>
             </button>
@@ -142,7 +142,9 @@
     <article>
         <div class="Kundvagn-låda">
             <h2 class="Kundvagn-rubrik">Kundvagn</h2>
-            <!-- <p class="Kundvagn-total-pris">Totalt: </p> -->
+                <div id="kundvagn-produkter"></div> 
+                <p id="totalt-pris">Totalt: 0 kr</p>
+                <button id="töm-kundvagn">Töm kundvagn</button>
         </div>
     </article>
 

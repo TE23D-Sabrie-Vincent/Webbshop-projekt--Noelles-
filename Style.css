@@ -180,7 +180,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    /* border: #f0f0ed;  */
+    cursor: pointer;
 }
 
 
@@ -208,8 +208,7 @@ h1 {
     background-color: #D9D9D9;
     border-radius: 25px;
     padding: 1px;
-    margin-top: 2%; /* Yttre marginal uppåt */
-    /* max-width: 50%; */
+    margin-top: 2%; 
     margin-left: 25%;
     margin-right: 25%;
     font-family: Arial, Helvetica, sans-serif;
@@ -237,6 +236,28 @@ h1 {
     display: flex;
     flex-direction: column;
     /* justify-content: flex-end; */
+}
+
+.kundvagns-produkt, #totalt-pris {
+    text-align: center;
+}
+
+#töm-kundvagn {
+    display: block; /* Gör knappen till en block-element för enkel centrering */
+    margin: 20px auto; /* Centrerar knappen horisontellt */
+    padding: 10px 20px; /* Gör knappen större och mer klickvänlig */
+    font-size: 18px; /* Större text */
+    font-weight: bold; /* Fet stil för bättre läsbarhet */
+    background-color: black; /* Röd färg för "varning" */
+    color: white; /* Vit text */
+    border: none; /* Tar bort kantlinjer */
+    border-radius: 8px; /* Ger rundade hörn */
+    cursor: pointer; /* Förändrar muspekaren till en klickbar hand */
+    transition: background 0.3s; 
+}
+
+#töm-kundvagn:hover {
+    background-color: #cc0000; /* Mörkare röd vid hover */
 }
 
 footer {
