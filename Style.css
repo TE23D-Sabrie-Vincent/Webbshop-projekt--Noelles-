@@ -17,10 +17,7 @@ h2 {
 }
 
 .transparent-div {
-    /* background-color: #DDCD9D; */
     background-color: rgba(221, 205, 157, 0.5);
-    /* Samma färg som #DDCD9D men med 50% transparens */
-    /* opacity: 0.5; */
     border-radius: 25px;
     margin-left: 5%;
     margin-right: 5%;
@@ -45,12 +42,8 @@ header {
     border-radius: 25px;
     border: solid black 2.5px;
     height: 30vh;
-    /* Behåll denna */
     min-height: 150px;
-    /* Lägg till en minsta höjd */
     overflow: hidden;
-    /* background-image: url('./img/Northern-Lights-above-Rovaniemi-in-Lapland-Finland-Visit-Rovaniemi-SamuliRosenberg-2-800x534.webp');
-    background-size: cover; */
 }
 
 nav {
@@ -79,7 +72,6 @@ nav > a:hover {
     text-align: center;
     font-size: x-large;
     border: solid black 2px;
-    /* margin-left: 1%; */
     margin-right: 1%;
     display: flex;
     align-items: center;
@@ -88,7 +80,6 @@ nav > a:hover {
 .Noelles_varuhus {
     background-color: #D9D9D9;
     border-radius: 15px;
-    /* margin-left: 1%; */
     border: solid black 2px;
     display: flex;
     flex-direction: row;
@@ -102,22 +93,16 @@ nav > a:hover {
 .Varuhus_logos {
     width: 60%;
     margin-left: 15%;
-    /* height: 50%; */
-
 }
 
 main {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-columns: 65vh 65vh 65vh; */
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 25px;
     gap: 10px;
-    /* display: flex;
-    flex-direction: row; */
-    /* max-width: max-content; */
 }
 
 .Produkt-lådor {
@@ -128,7 +113,6 @@ main {
     border-radius: 25px;
     margin-left: 2%;
     margin-right: 2%;
-    /* background-color: white; */
 }
 
 .Produkt-bilder {
@@ -136,7 +120,6 @@ main {
     height: fit-content;
     max-width: fit-content;
     max-height: fit-content;
-    /* align-items: center; */
 }
 
 #Kompressionbyxor-id {
@@ -155,8 +138,6 @@ main {
     height: 80%;
     width: 70%;
     align-self: center;
-    /* max-width: fit-content; */
-    /* position: relative; */
     margin-left: 15%;
     max-height: fit-content;
 
@@ -167,8 +148,6 @@ main {
 }
 
 .Produkt-pris {
-    /* display: flex;
-    flex-direction: column; */
     margin-right: 10%;
 }
 
@@ -337,6 +316,7 @@ footer {
 
     h1 {
         margin-right: 2%;
+        font-size: 105px;
     }
 
     .Produkt-lådor {
@@ -347,8 +327,7 @@ footer {
         border-radius: 25px;
         margin-left: 2%;
         margin-right: 2%;
-        overflow: hidden;
-        /* Viktigt för att behålla border-radius */
+        overflow: hidden;  /* Viktigt för att behålla border-radius */
     }
 
     .transparent-div {
