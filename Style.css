@@ -315,6 +315,7 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
 
     .Noelles_varuhus {
@@ -330,6 +331,8 @@ footer {
         /* margin-bottom: 38%; */
         max-height: fit-content;
         max-width: fit-content;
+        display: none;
+        /* opacity: 0%; /* Tar bort img logotypen för mobilen */
     }
 
     h1 {
